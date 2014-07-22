@@ -1,2 +1,1 @@
-Getting-and-Cleaning-Data
-=========================
+Description of the script
