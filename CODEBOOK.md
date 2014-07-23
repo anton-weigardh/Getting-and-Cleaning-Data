@@ -1,10 +1,10 @@
 # Code book
-@Author: Weigardh, A
-@File: CODEBOOK.md
+@Author: Weigardh, A  
+@File: CODEBOOK.md  
 
 ## Summary
 
-Below is a description for the file tidy_data generated in the run_analysis.R script.
+Below is a description for the file tidy_data generated in the run_analysis.R script.  
 For information about the script, see README.md
 
 ## Size
@@ -19,8 +19,8 @@ Two different columns that contain information about the participant and the tas
 * Activity - Performed Activity of the participant
 
 ## Column Labels
-66 different columns containing the average of either mean or standard deviation.
-In short, these are signals in three axis, X, Y and Z.
+66 different columns containing the average of either mean or standard deviation.  
+In short, these are signals in three axis, X, Y and Z.  
 t indicate "time"
 
 Column# Column Name
@@ -104,9 +104,9 @@ There are a total of 6 activities
 * LAYING (6)
 
 ## Subject ID
-Subject ID contains the ID.
+Subject ID contains the ID.  
 There are a total of 30 ID's, ID ??? {1,2,...,30}
 
-From test: {2,4,9,10,12,13,18,20,24}
+From test: {2,4,9,10,12,13,18,20,24}  
 From training: {1,3,5,6,7,8,11,14,15,16,17,19,21,22,23,25,26,27,28,29,30}
 
