@@ -1,13 +1,13 @@
 # Code book
 @Author: Weigardh, A  
-@File: CODEBOOK.md  
+@File: `CODEBOOK.md`  
 
 ## Summary
 
-Below is a description for the data in  <tidy_data> generated in the <run_analysis.R> script.  
+Below is a description for the data in  tidy_data generated in the run_analysis.R script.  
 For information about the script, see README.md or the script
-[README](https://github.com/anton-weigardh/Getting-and-Cleaning-Data/blob/master/README.md)
-[run_analysis.R](https://github.com/anton-weigardh/Getting-and-Cleaning-Data/blob/master/run_analysis.R)
+[README](https://github.com/anton-weigardh/Getting-and-Cleaning-Data/blob/master/README.md)   
+[run_analysis.R](https://github.com/anton-weigardh/Getting-and-Cleaning-Data/blob/master/run_analysis.R)    
 
 ## Original Data
 
