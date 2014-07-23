@@ -105,8 +105,8 @@ There are a total of 6 activities
 
 ## Subject ID
 Subject ID contains the ID.  
-There are a total of 30 ID's, ID ??? {1,2,...,30}
+There are a total of 30 ID's, ID is element of {1,2,...,30}
 
 From test: {2,4,9,10,12,13,18,20,24}  
-From training: {1,3,5,6,7,8,11,14,15,16,17,19,21,22,23,25,26,27,28,29,30}
+From training: {1,3,5,6,7,8,11,14,15,16,17,19,21,22,23,25,26,27,28,29,30}  
 
