@@ -1,12 +1,19 @@
 ### Code book
 
 ## ID Fields
-Two different fields that contain information about the participant and the task
+Two different fields that contain information about the participant and the task performed.
 
-* Subject ID * - The ID of the participant
-* Activity * - Performed Activity of the participant
+* Subject ID - The ID of the participant
+* Activity - Performed Activity of the participant
 
 ## Column Labels
+66 different columns containing the average of either mean or standard deviation.
 
+## Activity Labels
+* WALKING (1)
+* WALKING_UPSTAIRS (2)
+* WALKING_DOWNSTAIRS (3)
+* SITTING (4)
+* STANDING (5)
+* LAYING (6)
 
-##
