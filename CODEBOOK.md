@@ -1,14 +1,19 @@
-## Code book
-@author Weigardh, A
+# Code book
+@Author: Weigardh, A
+@File: CODEBOOK.md
+
+## Summary
+
 Below is a description for the file tidy_data generated in the run_analysis.R script.
-For information about the script, see Readme.md
+For information about the script, see README.md
 
 ## Size
-tidy_data has the dimension
+tidy_data has the dimension 
 180 68
+approximatley 219 kb as a txt file
 
 ## ID Fields
-Two different fields that contain information about the participant and the task performed.
+Two different columns that contain information about the participant and the task performed.
 
 * Subject ID - The ID of the participant
 * Activity - Performed Activity of the participant
@@ -97,4 +102,11 @@ There are a total of 6 activities
 * SITTING (4)
 * STANDING (5)
 * LAYING (6)
+
+## Subject ID
+Subject ID contains the ID.
+There are a total of 30 ID's, ID ??? {1,2,...,30}
+
+From test: {2,4,9,10,12,13,18,20,24}
+From training: {1,3,5,6,7,8,11,14,15,16,17,19,21,22,23,25,26,27,28,29,30}
 
