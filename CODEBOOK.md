@@ -4,13 +4,23 @@
 
 ## Summary
 
-Below is a description for the file tidy_data generated in the run_analysis.R script.  
-For information about the script, see README.md
+Below is a description for the data in  <tidy_data> generated in the <run_analysis.R> script.  
+For information about the script, see README.md or the script
+[README](https://github.com/anton-weigardh/Getting-and-Cleaning-Data/blob/master/README.md)
+[run_analysis.R](https://github.com/anton-weigardh/Getting-and-Cleaning-Data/blob/master/run_analysis.R)
+
+## Original Data
+
+Original Data can downloaded from  
+[Original Data](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)  
+
+Decription can be found at 
+[Human+Activity+Recognition+Using+Smartphones](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)  
 
 ## Size
 tidy_data has the dimension 
 180 68
-approximatley 219 kb as a txt file
+approximately 219 KB as a txt file
 
 ## ID Fields
 Two different columns that contain information about the participant and the task performed.
@@ -18,7 +28,7 @@ Two different columns that contain information about the participant and the tas
 * Subject ID - The ID of the participant
 * Activity - Performed Activity of the participant
 
-## Column Labels
+## Column Feature Labels
 66 different columns containing the average of either mean or standard deviation.  
 In short, these are signals in three axis, X, Y and Z.  
 t indicate "time"
@@ -94,6 +104,8 @@ Column# Column Name
 * 67	fBodyBodyGyroJerkMagMean__
 * 68	fBodyBodyGyroJerkMagStd__
 
+In the original data set, there are 561 different features.
+
 ## Activity Labels
 There are a total of 6 activities
 * WALKING (1)
@@ -101,7 +113,9 @@ There are a total of 6 activities
 * WALKING_DOWNSTAIRS (3)
 * SITTING (4)
 * STANDING (5)
-* LAYING (6)
+* LAYING (6)  
+
+Originally, the labels were numeric (1-6).
 
 ## Subject ID
 Subject ID contains the ID.  
