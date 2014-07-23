@@ -16,6 +16,6 @@ In order to run properly, the following files are required
 * y_test.txt - Test label
 * subject_test.txt - Test subject
     
-* features.txt : List of all features.
-* activity_labels.txt: Links the class labels with their activity name.
+* features.txt - List of all features.
+* activity_labels.txt - Links the class labels with their activity name.
  
