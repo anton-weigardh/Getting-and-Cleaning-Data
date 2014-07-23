@@ -1,9 +1,17 @@
+## File: run_analysis.R
+## Author: Weigardh, A
+##
+## This script returns a data set of human activity data.
+##
+## For a full account of the data, see 
+## http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+## Below is the data for the project
+## https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+#--------------------------------------------------------------------#
 library(plyr)
-library(xlsx)
-
 #--------------------------------------------------------------------#
   
-# Import the Data - 6 files in total
+## Import the Data - 8 files in total are required
     
     # Train data
 train_data <- read.table("UCI HAR Dataset/train/X_train.txt")
@@ -15,15 +23,14 @@ test_data <- read.table("UCI HAR Dataset/test/X_test.txt")
 test_label <- read.table("UCI HAR Dataset/test/y_test.txt")
 test_subject <- read.table("UCI HAR Dataset/test/subject_test.txt")
     
-
-  # Read in Labels and Features
+    # Read in Labels and Features
 features <-read.table("UCI HAR Dataset/features.txt")
 activity_labels <-read.table("UCI HAR Dataset/activity_labels.txt")
 #--------------------------------------------------------------------#
 
-# Add data together
+## Add data together
   
-  # Add the train- and the test data together
+  # Bind the train- and the test data together
 merge_data  <- rbind(train_data,test_data)
 
   # Sort out means and standard deviations
@@ -34,13 +41,13 @@ feat3 <-feat[!is.element(feat,feat2)]
   # Change name on the columns
 colnames(merge_data) <- features[,2]
 
-  # Subset the data
+  # Subset the data for means and columns
 merge_data <- merge_data[,c(feat3)]
 #--------------------------------------------------------------------#
 
-# Add Subject and Activity Data
+## Add Subject and Activity Data
 
-  # Add Subject.ID and Activity together from train and data
+  # Bind Subject.ID and Activity together from train and data
 merge_subject <-rbind(train_subject,test_subject)
 merge_label <-rbind(train_label,test_label)
     
@@ -55,7 +62,7 @@ activity <- as.vector(activity_labels[,2])
 for (i in 1:length(activity)){
   merge_label[merge_label==i] <- activity[i]
 }
-  # Add Subject.ID and Acctivity to the earlier data set
+  # Bind Subject.ID and Acctivity to the earlier data set
 merge_data <- cbind(merge_subject, merge_data)
 merge_data <- cbind(merge_label, merge_data)
 
@@ -66,14 +73,15 @@ colnames(merge_data) <-gsub("mean","Mean",names(merge_data))
 colnames(merge_data) <-gsub("std","Std",names(merge_data))
 #--------------------------------------------------------------------#
 
-#Create a tidy set
+## Create a tidy set
 
-  # Create tidy data set with means and standard deviations
+  # Create tidy data set with average of means and standard deviations
 tidy_data <- ddply(merge_data, .(Subject.ID,Activity), numcolwise(mean))
 #--------------------------------------------------------------------#
 
-# Write out a file
+## Write out  the tidy data set
 
-  # Write to an .xlsx-file
-write.xlsx(tidy_data, file = "tidy_data.xlsx", sheetName="Sheet1",col.names=TRUE, row.names=FALSE, append=FALSE)
+  # Write to an .txt-file
+write.table(tidy_data, "tidy_data.txt", sep="\t")
 #--------------------------------------------------------------------#
+tidy_data[c(1,2,3,4,5,6), c(1,2,3,4,5,6)]
