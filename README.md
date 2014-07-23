@@ -1,4 +1,5 @@
-###Description of the Script run_analysis.R
+##Description of the Script run_analysis.R
+@ Author: Weigardh, A
 
 ## Original Data
 
