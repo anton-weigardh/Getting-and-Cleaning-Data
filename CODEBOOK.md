@@ -1,11 +1,11 @@
-# Code book
+# CODEBOOK
 @Author: Weigardh, A  
 @File: `CODEBOOK.md`  
 
 ## Summary
 
 Below is a description for the data in  `tidy_data` generated in the `run_analysis.R script`.  
-For information about the script, see `README.md` or the `script`  
+For information about the script, see `README.md` or the script `run_analysis.R`  
 [README](https://github.com/anton-weigardh/Getting-and-Cleaning-Data/blob/master/README.md)   
 [run_analysis.R](https://github.com/anton-weigardh/Getting-and-Cleaning-Data/blob/master/run_analysis.R)    
 
@@ -22,8 +22,6 @@ Taken from the previous link, the data contains the following.
 
 *"The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data."* 
 
-### Used files
-
 ## Size
 `tidy_data` has the dimension 
 180 68  
@@ -36,9 +34,7 @@ The original data set was of the dimension
 The original data frames has been reshaped so that just a subset of the data remains.
 In [README](https://github.com/anton-weigardh/Getting-and-Cleaning-Data/blob/master/README.md), the reader will learn what happens in each step. Many of the features has been removed in `tidy_data` and several of the descriptive names has been changed.
 
-### Used files
-
-## Required Files
+### Required Files
 The `tidy_data` data frame is created from the following files
 
 * `X_train.txt` - Training set
@@ -149,7 +145,7 @@ There are a total of 6 activities
 * LAYING (6)  
 
 Originally, the labels were numeric (1-6).  
-The corresponding file is `activity_labels.txt`
+The corresponding file is `activity_labels.txt`.
 
 ## Subject ID
 Subject ID contains the ID of each subject in the experiment.  
