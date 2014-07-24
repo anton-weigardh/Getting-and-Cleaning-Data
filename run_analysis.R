@@ -82,7 +82,7 @@ tidy_data <- ddply(merge_data, .(Subject.ID,Activity), numcolwise(mean))
 ## Write out the tidy data set
 
   # Write to an .txt-file
-write.table(tidy_data, "tidy_data.txt", sep="\t")
+write.table(tidy_data, "tidy_data.txt", sep=" ", row.names = FALSE)
 #--------------------------------------------------------------------#
 tidy_data[c(1,2,3,4,5,6), c(1,2,3,4,5,6)]
 
