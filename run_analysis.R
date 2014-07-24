@@ -55,10 +55,10 @@ merge_label <-rbind(train_label,test_label)
 colnames(merge_subject)<-"Subject.ID" 
 colnames(merge_label)<-"Activity" 
 
-  # Create a vector with the names of activites
+  # Create a vector with the names of activities
 activity <- as.vector(activity_labels[,2])
 
-  # Rename the activites in a loop
+  # Rename the activities in a loop
 for (i in 1:length(activity)){
   merge_label[merge_label==i] <- activity[i]
 }
@@ -79,7 +79,7 @@ colnames(merge_data) <-gsub("std","Std",names(merge_data))
 tidy_data <- ddply(merge_data, .(Subject.ID,Activity), numcolwise(mean))
 #--------------------------------------------------------------------#
 
-## Write out  the tidy data set
+## Write out the tidy data set
 
   # Write to an .txt-file
 write.table(tidy_data, "tidy_data.txt", sep="\t")

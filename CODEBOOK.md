@@ -4,8 +4,8 @@
 
 ## Summary
 
-Below is a description for the data in  tidy_data generated in the run_analysis.R script.  
-For information about the script, see README.md or the script
+Below is a description for the data in  `tidy_data` generated in the `run_analysis.R script`.  
+For information about the script, see `README.md` or the `script`  
 [README](https://github.com/anton-weigardh/Getting-and-Cleaning-Data/blob/master/README.md)   
 [run_analysis.R](https://github.com/anton-weigardh/Getting-and-Cleaning-Data/blob/master/run_analysis.R)    
 
@@ -14,13 +14,26 @@ For information about the script, see README.md or the script
 Original Data can downloaded from  
 [Original Data](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)  
 
-Decription can be found at 
+Description can be found at 
 [Human+Activity+Recognition+Using+Smartphones](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)  
 
+### Description
+Taken from the previous link, the data contains the following.  
+
+*"The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data."* 
+
 ## Size
-tidy_data has the dimension 
-180 68
+`tidy_data` has the dimension 
+180 68  
 approximately 219 KB as a txt file
+
+The original data set was of the dimension  
+10299 563
+
+## Transformations
+The original data frames has been reshaped so that just a subset of the data remains.
+In [README](https://github.com/anton-weigardh/Getting-and-Cleaning-Data/blob/master/README.md), the reader will learn what happens in each step.  
+Many of the features has been removed in `tidy_data` and several of the descriptive names has been changed.  
 
 ## ID Fields
 Two different columns that contain information about the participant and the task performed.
@@ -104,7 +117,7 @@ Column# Column Name
 * 67	fBodyBodyGyroJerkMagMean__
 * 68	fBodyBodyGyroJerkMagStd__
 
-In the original data set, there are 561 different features.
+In the original data set, there were 561 different features (strings), all with different names.
 
 ## Activity Labels
 There are a total of 6 activities
@@ -124,3 +137,4 @@ There are a total of 30 ID's, ID is element of {1,2,...,30}
 From test: {2,4,9,10,12,13,18,20,24}  
 From training: {1,3,5,6,7,8,11,14,15,16,17,19,21,22,23,25,26,27,28,29,30}  
 
+No alterations has been made compared to the original data.
