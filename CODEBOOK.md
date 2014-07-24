@@ -22,6 +22,8 @@ Taken from the previous link, the data contains the following.
 
 *"The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data."* 
 
+### Used files
+
 ## Size
 `tidy_data` has the dimension 
 180 68  
@@ -32,19 +34,36 @@ The original data set was of the dimension
 
 ## Transformations
 The original data frames has been reshaped so that just a subset of the data remains.
-In [README](https://github.com/anton-weigardh/Getting-and-Cleaning-Data/blob/master/README.md), the reader will learn what happens in each step.  
-Many of the features has been removed in `tidy_data` and several of the descriptive names has been changed.  
+In [README](https://github.com/anton-weigardh/Getting-and-Cleaning-Data/blob/master/README.md), the reader will learn what happens in each step. Many of the features has been removed in `tidy_data` and several of the descriptive names has been changed.
+
+### Used files
+
+## Required Files
+The `tidy_data` data frame is created from the following files
+
+* `X_train.txt` - Training set
+* `y_train.txt` - Training labels
+* `subject_train.txt` - Training subject
+* `X_test.txt` - Test set
+* `y_test.txt` - Test label
+* `subject_test.txt` - Test subject
+* `features.txt` - List of all features.
+* `activity_labels.txt` - Links the class labels with their activity name.
 
 ## ID Fields
 Two different columns that contain information about the participant and the task performed.
 
-* Subject ID - The ID of the participant
+* Subject ID - The ID of the participant  
 * Activity - Performed Activity of the participant
+These are from the files (`subject_train.txt` , `subject_test.txt`) for ID and  (`X_train.txt` and `y_train.txt`) for Activity 
 
 ## Column Feature Labels
 66 different columns containing the average of either mean or standard deviation.  
 In short, these are signals in three axis, X, Y and Z.  
-t indicate "time"
+* t indicate "time"  
+* acc indicate accelerometer
+* gyro indicate gyroscope
+* Std indicate standard deviation
 
 Column# Column Name
 
@@ -117,7 +136,8 @@ Column# Column Name
 * 67	fBodyBodyGyroJerkMagMean__
 * 68	fBodyBodyGyroJerkMagStd__
 
-In the original data set, there were 561 different features (strings), all with different names.
+In the original data set, there were 561 different features (strings), all with different names.  
+The corresponding file is `features.txt`.
 
 ## Activity Labels
 There are a total of 6 activities
@@ -128,10 +148,11 @@ There are a total of 6 activities
 * STANDING (5)
 * LAYING (6)  
 
-Originally, the labels were numeric (1-6).
+Originally, the labels were numeric (1-6).  
+The corresponding file is `activity_labels.txt`
 
 ## Subject ID
-Subject ID contains the ID.  
+Subject ID contains the ID of each subject in the experiment.  
 There are a total of 30 ID's, ID is element of {1,2,...,30}
 
 From test: {2,4,9,10,12,13,18,20,24}  

@@ -33,8 +33,7 @@ In order to run properly, the following files are required
 * `activity_labels.txt` - Links the class labels with their activity name.
  
 The folder *UCI HAR Dataset*, containing the files must be in the the working directory.
-In this script, the `plyr-package` is used.  
-Once the working directory is sat and packages are installed, source `run_analysis.R`.  
+In this script, the `plyr-package` is used. Once the working directory is sat and packages are installed, source `run_analysis.R`.  
 
 ## Goal
 The goal is to create a tidy data set that can be investigated further.     
@@ -52,12 +51,12 @@ In `run_analysis.R` the steps performed are
     Line 36-45 sorts out the means and standard deviations.      
 4) **Adding additional data, descriptive renaming**  
     In line 51-73 Activity Data and Subject ID is added.  
-    Labels of the columns are changed and some clean up is performed.
+    Labels of the columns are changed and some clean up is performed.  
 5) **Creation of tidy data set**  
     In line 79, a tidy data set, `tidy_data` with averages of means and standard deviation is created.    
-    Now there are 68 different features.
-6) **Creation of txt file of the tidy data set**  
-    Finally, in line 85, a file is written to the current directory, i.e. `tidy_data.csv`.
+    Now there are 68 different features.   
+6) **Creation of txt file of the tidy data set**    
+    Finally, in line 85, a file is written to the current directory, i.e. `tidy_data.csv`.  
     
 ### CODEBOOK
 For a description about the variables, please see CODEBOOK.md  
