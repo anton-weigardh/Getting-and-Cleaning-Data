@@ -35,7 +35,7 @@ In order to run properly, the following files are required
 * `features.txt` - List of all features.
 * `activity_labels.txt` - Links the class labels with their activity name.
  
-The folder *UCI HAR Dataset*, containing the files must be in the the working directory. The user must download and unzip the smartphone dataset into the working directory.
+The folder *UCI HAR Dataset*, containing the files must be in the the working directory. The user must thus download and unzip the smartphone dataset into the working directory. This is not done in the script.
 In this script, the `plyr-package` is used. Once the working directory is sat and packages are installed, source `run_analysis.R`.  
 
 ## Goal
