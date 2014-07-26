@@ -55,10 +55,10 @@ In `run_analysis.R` the steps performed are
     Line 36-45 sorts out the means and standard deviations. In this step, some means and standard deviation were sorted out. In the writers opinion, they did not fit the criteria of the task. Features that were sorted out had the name meanFreq. In these lines, the names are also set for the features.      
 4) **Adding additional data, descriptive renaming**  
     In line 51-73 Activity Data and Subject ID is added.  
-    Labels of the columns are changed and some clean up is performed. The variables should now be understandable. 
+    Labels of the columns are changed and some clean up is performed. The variables should now be understandable.   
 5) **Creation of tidy data set**  
     In line 79, a tidy data set, `tidy_data` with averages of means and standard deviation is created.    
-    Now there are 68 different features and a total of 180 rows (6 for each ID).
+    Now there are 68 different features and a total of 180 rows (6 for each ID).  
 6) **Creation of txt file of the tidy data set**    
     Finally, in line 85, a file is written to the current directory, i.e. `tidy_data.csv`.  
     
