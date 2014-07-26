@@ -48,10 +48,11 @@ In `run_analysis.R` the steps performed are
 
 1) **Data import**  
     In line 17-28, data is imported into R. As mentioned earlier the data must be in the working directory.  
+    This step usually take some time, especially for thee larger files.  
 2) **Adding data together**  
     In line 34, a data frame, `merge_data` with combined data is created.  
 3) **Extraction of means and standard deviations**  
-    Line 36-45 sorts out the means and standard deviations.      
+    Line 36-45 sorts out the means and standard deviations. In this step, some means and standard deviation were sorted out. In the writers opinion, they did not fit the criteria of the task. Features that were sorted out had the name meanFreq. In these lines, the names are also set for the features.
 4) **Adding additional data, descriptive renaming**  
     In line 51-73 Activity Data and Subject ID is added.  
     Labels of the columns are changed and some clean up is performed.  
