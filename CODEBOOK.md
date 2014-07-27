@@ -157,7 +157,7 @@ There are a total of 6 activities
 * STANDING (5)
 * LAYING (6)  
 
-Originally, the labels were numeric (1-6). They are now of the type character.    
+Originally, the labels were integers (1-6). They are now of the type character.    
 The corresponding file is `activity_labels.txt`.
 
 ## Subject ID
