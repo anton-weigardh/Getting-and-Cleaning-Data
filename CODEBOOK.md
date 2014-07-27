@@ -145,7 +145,8 @@ Column# Column Name
 * 68	fBodyBodyGyroJerkMagStd__
 
 In the original data set, there were 561 different features (strings), all with different names.  
-The corresponding file is `features.txt`. The entires inside of all features are numerical. As said earlier, they are bounded withing [-1,1]
+The corresponding file is `features.txt`.   
+The entires inside of all features are numerical. As said earlier, they are bounded withing [-1,1]
 
 ## Activity Labels
 There are a total of 6 activities
@@ -161,7 +162,7 @@ The corresponding file is `activity_labels.txt`.
 
 ## Subject ID
 Subject ID contains the ID of each subject in the experiment.  
-There are a total of 30 ID's, ID is element of {1,2,...,30}
+There are a total of 30 ID's (integers), ID is element of {1,2,...,30}
 
 From test: {2,4,9,10,12,13,18,20,24}  
 From training: {1,3,5,6,7,8,11,14,15,16,17,19,21,22,23,25,26,27,28,29,30}  
