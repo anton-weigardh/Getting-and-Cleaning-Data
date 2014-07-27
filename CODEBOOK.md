@@ -146,7 +146,7 @@ Column# Column Name
 
 In the original data set, there were 561 different features (strings), all with different names.  
 The corresponding file is `features.txt`.   
-The entires inside of all features are numerical. As said earlier, they are bounded withing [-1,1]
+The elements inside of all features are numerical. As said earlier, they are bounded withing [-1,1]
 
 ## Activity Labels
 There are a total of 6 activities
