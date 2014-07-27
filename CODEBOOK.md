@@ -145,7 +145,7 @@ Column# Column Name
 * 68	fBodyBodyGyroJerkMagStd__
 
 In the original data set, there were 561 different features (strings), all with different names.  
-The corresponding file is `features.txt`.
+The corresponding file is `features.txt`. The entires inside of all features are numerical. As said earlier, they are bounded withing [-1,1]
 
 ## Activity Labels
 There are a total of 6 activities
@@ -156,7 +156,7 @@ There are a total of 6 activities
 * STANDING (5)
 * LAYING (6)  
 
-Originally, the labels were numeric (1-6).  
+Originally, the labels were numeric (1-6). They are now of the type character.    
 The corresponding file is `activity_labels.txt`.
 
 ## Subject ID
